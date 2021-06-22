@@ -1,0 +1,170 @@
+.page {
+    .info {
+        padding-top   : 64px;
+        padding-bottom: 59px;
+        background    : url(../img/page-bluelines-left.png) no-repeat left 320px,
+            url(../img/page-bluelines-right.png) no-repeat right bottom;
+
+        &__content {
+            // background: url(../img/page-greylines.png) no-repeat center bottom;
+        }
+
+        &__wrapper {
+            .row-flex();
+        }
+
+        &__blocks {
+            .col();
+            .size(7);
+        }
+
+        &__sidebar {
+            .col();
+            .size(5);
+            padding-top: 77px;
+        }
+
+        &__block {
+            margin-bottom : 57px;
+            padding-top   : 50px;
+            padding-left  : 76px;
+            padding-right : 68px;
+            padding-bottom: 55px;
+
+            border-radius: 30px;
+            background   : @white;
+            .block-shadow();
+
+            h2 {
+                margin-bottom: 27px;
+                font-size    : 46px;
+                line-height  : 46px;
+                font-weight  : 700;
+            }
+        }
+
+        &__text {
+            font-size  : 25px;
+            line-height: 25px;
+
+            p {
+                margin-bottom: 25px;
+            }
+
+            p+ul {
+                margin-top: -25px;
+            }
+
+            li {
+                // position    : relative;
+                // padding-left: 15px;
+
+                // &::before {
+                //     position        : absolute;
+                //     display         : block;
+                //     content         : '';
+                //     width           : 6px;
+                //     height          : 2px;
+                //     background-color: @black;
+                //     left            : 0;
+                //     top             : 12px;
+                // }
+            }
+        }
+
+        &__sidebar {
+            padding-left: 85px;
+
+            .info__btns {
+                margin-bottom: 60px;
+            }
+
+            .info__btn {
+                display      : block;
+                margin-bottom: 19px;
+            }
+        }
+
+        &__point {
+            margin-bottom: 74px;
+            padding-left : 125px;
+            position     : relative;
+
+            &::before {
+                position     : absolute;
+                display      : block;
+                content      : '';
+                width        : 98px;
+                height       : 98px;
+                border-radius: 50%;
+                left         : 0;
+                top          : -25px;
+                .block-shadow();
+            }
+
+            &:first-child {
+                &::before {
+                    background: url(../img/time.png) no-repeat center;
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background: url(../img/camera.png) no-repeat center;
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background: url(../img/money.png) no-repeat center;
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    background: url(../img/shedule.png) no-repeat center;
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    background: url(../img/people.png) no-repeat center;
+                }
+            }
+
+            h3 {
+                font-weight: 700;
+            }
+        }
+
+        &__btn {
+            // display      : block;
+            width : 480px;
+            margin: 0 auto;
+
+            background-color: @red;
+
+            &:hover {
+                background-color: darken(@red, 10%);
+            }
+        }
+
+        &__bottom {
+            p {
+                margin-bottom: 33px;
+
+                b {
+                    font-size  : 46px;
+                    font-weight: 700;
+                }
+            }
+
+
+            .info__btns {
+                a+a {
+                    margin-left: 48px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.feedback {
+    padding-top   : 70px;
+    padding-bottom: 77px;
+
+    &__content {
+        .row-flex();
+        align-items: center;
+    }
+
+    &__text {
+        .col();
+        .size(6);
+
+        h2,
+        p {
+            max-width: 465px;
+            margin   : 0 auto;
+
+            font-size  : 42px;
+            line-height: 42px;
+            font-weight: 700;
+        }
+    }
+
+    &__form {
+        .col();
+        .size(6);
+
+        input {
+            margin-bottom: 25px;
+            padding      : 28px 30px;
+
+            width    : 100%;
+            max-width: 640px;
+            display  : block;
+
+            font-size: 25px;
+
+            border       : none;
+            border-radius: 50px;
+            box-shadow   : 0px 7px 32px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__btn {}
+}

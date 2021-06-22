@@ -1,0 +1,126 @@
+// USER VARIABLES SECTION
+
+@accent   : #01a1f7; // Accent Color
+@fontsize : 25px; // Body Font Size
+@white    : #ffffff;
+@black    : #000;
+@grey     : #e8e8e8;
+@red      : #fe6a24;
+
+
+
+@userfont : 'Circe',
+sans-serif;
+@systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+@font-face {
+	font-family: 'Circe';
+	src        : url('../fonts/Circe-Regular.eot');
+	src        : local('Circe'), local('Circe-Regular'),
+		url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe-Regular.woff') format('woff'),
+		url('../fonts/Circe-Regular.ttf') format('truetype');
+	font-weight : 400;
+	font-display: swap;
+	font-style  : normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src        : url('../fonts/Circe-Bold.eot');
+	src        : local('Circe Bold'), local('Circe-Bold'),
+		url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe-Bold.woff') format('woff'),
+		url('../fonts/Circe-Bold.ttf') format('truetype');
+	font-weight : 700;
+	font-display: swap;
+	font-style  : normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src        : url('../fonts/Circe-ExtraBold.eot');
+	src        : local('Circe ExtraBold'), local('Circe-ExtraBold'),
+		url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe-ExtraBold.woff') format('woff'),
+		url('../fonts/Circe-ExtraBold.ttf') format('truetype');
+	font-weight : 800;
+	font-display: swap;
+	font-style  : normal;
+}
+
+.degub-grid {
+	.debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+// .container-full {
+//   .wrapper-full();
+//   max-width: 1440px;
+//   padding-left: 0;
+//   padding-right: 0;
+//   margin: 0 auto;
+// }
+
+::selection {
+	background-color: @accent;
+	color           : @white;
+}
+
+input {
+	outline: none;
+
+	&:focus:required:invalid {
+		border: 1px solid @red
+	}
+
+	&:required:valid {
+		border: 1px solid green
+	}
+}
+
+// .visually-hidden {
+//   position: absolute;
+//   clip: rect(0 0 0 0);
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+// }
+
+// html, body {
+//   scroll-behavior: smooth;
+// }
+
+body {
+	font-family      : @userfont;
+	font-size        : @fontsize;
+	font-weight      : 400;
+	// line-height: @lineheight;
+	color            : @black;
+	min-width        : 320px;
+	// min-height: 100vh;
+	// position: relative;
+	// letter-spacing: 0.05em;
+}
+
+section,
+footer,
+header {
+	// position: relative;
+	// z-index: 1;
+	// border-top: 1px solid transparent;
+	// border-bottom: 1px solid transparent;
+}
