@@ -8,8 +8,6 @@
 
     &__item {
         .col();
-        .size(6);
-        .size-lg(12);
 
         .lg-block( {
                 text-align : center;
@@ -18,6 +16,9 @@
         );
 
         &:first-child {
+            .size(9);
+            .size-lg(12);
+
             p {
                 display     : inline-block;
                 padding-left: 20px;
@@ -33,6 +34,8 @@
         }
 
         &:last-child {
+            .size(3);
+            .size-lg(12);
             text-align: right;
 
             .lg-block( {
