@@ -1,25 +1,23 @@
 .page {
     .hero {
-        padding-top   : 418px;
-        padding-bottom: 174px;
+        padding-top   : 418px/@scale;
+        padding-bottom: 174px/@scale;
 
         color     : @white;
-        background: #487ba0 url(../img/page-hero-bg.png) no-repeat center/cover;
+        background: #487ba0 url(../img/page-hero-bg.jpg) no-repeat center/cover;
 
         &__content {
-            max-width    : 700px;
+            max-width    : 700px/@scale;
             margin-left  : auto;
             // min-height: 852px;
         }
 
         h1 {
-            font-size  : 100px;
-            line-height: 100px;
-            font-weight: 800;
+            font-size: 100px/@scale;
         }
 
         &__subheader {
-            font-size  : 48px;
+            font-size  : 48px/@scale;
             font-weight: 700;
         }
     }

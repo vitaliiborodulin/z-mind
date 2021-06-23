@@ -1,7 +1,7 @@
 .page {
     .info {
-        padding-top   : 64px;
-        padding-bottom: 59px;
+        padding-top   : 64px/@scale;
+        padding-bottom: 59px/@scale;
         background    : url(../img/page-bluelines-left.png) no-repeat left 320px,
             url(../img/page-bluelines-right.png) no-repeat right bottom;
 
@@ -21,38 +21,33 @@
         &__sidebar {
             .col();
             .size(5);
-            padding-top: 77px;
+            padding-top: 77px/@scale;
         }
 
         &__block {
-            margin-bottom : 57px;
-            padding-top   : 50px;
-            padding-left  : 76px;
-            padding-right : 68px;
-            padding-bottom: 55px;
+            margin-bottom : 57px/@scale;
+            padding-top   : 50px/@scale;
+            padding-left  : 76px/@scale;
+            padding-right : 68px/@scale;
+            padding-bottom: 55px/@scale;
 
             border-radius: 30px;
             background   : @white;
             .block-shadow();
 
             h2 {
-                margin-bottom: 27px;
-                font-size    : 46px;
-                line-height  : 46px;
-                font-weight  : 700;
+                margin-bottom: 27px/@scale;
+                font-size    : 46px/@scale;
             }
         }
 
         &__text {
-            font-size  : 25px;
-            line-height: 25px;
-
             p {
-                margin-bottom: 25px;
+                margin-bottom: 25px/@scale;
             }
 
             p+ul {
-                margin-top: -25px;
+                margin-top: -25px/@scale;
             }
 
             li {
@@ -73,73 +68,73 @@
         }
 
         &__sidebar {
-            padding-left: 85px;
+            padding-left: 85px/@scale;
 
             .info__btns {
-                margin-bottom: 60px;
+                margin-bottom: 60px/@scale;
             }
 
             .info__btn {
                 display      : block;
-                margin-bottom: 19px;
+                margin-bottom: 19px/@scale;
             }
         }
 
         &__point {
-            margin-bottom: 74px;
-            padding-left : 125px;
+            margin-bottom: 74px/@scale;
+            padding-left : 125px/@scale;
             position     : relative;
 
             &::before {
                 position     : absolute;
                 display      : block;
                 content      : '';
-                width        : 98px;
-                height       : 98px;
+                width        : 98px/@scale;
+                height       : 98px/@scale;
                 border-radius: 50%;
                 left         : 0;
-                top          : -25px;
+                top          : -25px/@scale;
                 .block-shadow();
+
+                background-repeat  : no-repeat;
+                background-position: center;
+                background-size    : 60%;
             }
 
             &:first-child {
                 &::before {
-                    background: url(../img/time.png) no-repeat center;
+                    background-image: url(../img/time.png);
                 }
             }
 
             &:nth-child(2) {
                 &::before {
-                    background: url(../img/camera.png) no-repeat center;
+                    background-image: url(../img/camera.png);
                 }
             }
 
             &:nth-child(3) {
                 &::before {
-                    background: url(../img/money.png) no-repeat center;
+                    background-image: url(../img/money.png);
                 }
             }
 
             &:nth-child(4) {
                 &::before {
-                    background: url(../img/shedule.png) no-repeat center;
+                    background-image: url(../img/shedule.png);
                 }
             }
 
             &:nth-child(5) {
                 &::before {
-                    background: url(../img/people.png) no-repeat center;
+                    background-image: url(../img/people.png);
                 }
-            }
-
-            h3 {
-                font-weight: 700;
             }
         }
 
         &__btn {
             // display      : block;
-            width : 480px;
+            width : 480px/@scale;
             margin: 0 auto;
 
             background-color: @red;
@@ -151,10 +146,10 @@
 
         &__bottom {
             p {
-                margin-bottom: 33px;
+                margin-bottom: 33px/@scale;
 
                 b {
-                    font-size  : 46px;
+                    font-size  : 46px/@scale;
                     font-weight: 700;
                 }
             }
@@ -162,7 +157,7 @@
 
             .info__btns {
                 a+a {
-                    margin-left: 48px;
+                    margin-left: 48px/@scale;
                 }
             }
         }

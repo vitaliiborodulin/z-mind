@@ -7,13 +7,13 @@
     background-color: transparent;
 
     &__content {
-        padding        : 40px 0;
+        padding        : 40px/@scale 0;
         display        : flex;
         justify-content: space-between;
         align-items    : center;
 
-        font-size  : 25px;
-        line-height: 25px;
+        // font-size  : 25px;
+        // line-height: 100%;
         font-weight: 700;
     }
 
@@ -22,7 +22,7 @@
         align-items: center;
 
 
-        font-size  : 42px;
+        font-size  : 42px/@scale;
         font-weight: 800;
 
         color          : @accent;
@@ -31,21 +31,20 @@
 
 
         img {
-            margin-right: 24px;
+            margin-right: 24px/@scale;
         }
     }
 
     h2 {
-        max-width  : 305px;
-        font-weight: 700;
-        color      : inherit;
+        max-width: 305px/@scale;
+        color    : inherit;
     }
 
     &__menu {
         display: flex;
 
         li {
-            margin: 0 13px;
+            margin: 0 13px/@scale;
         }
 
         a {
