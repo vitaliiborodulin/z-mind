@@ -24,8 +24,9 @@
     }
 
     &__logo {
-        display    : flex;
-        align-items: center;
+        display     : flex;
+        align-items : center;
+        margin-right: 10px;
 
 
         div {
@@ -33,14 +34,15 @@
                 display: block;
 
                 &:first-child {
-                    font-size  : round(42px/@scale);
+                    font-size: round(42px/@scale);
+                    .lg(font-size, round(42px/@scale_md));
                     font-weight: 800;
                     color      : @accent;
                 }
 
                 &:last-child {
                     font-size: 18px;
-                    color    : @white;
+                    color    : @black;
                 }
             }
         }
@@ -52,7 +54,7 @@
         img {
             margin-right: round(24px/@scale);
 
-            .md-block( {
+            .lg-block( {
                     width : round(114px/@scale_md);
                     height: round(114px/@scale_md);
                 }
@@ -124,7 +126,7 @@
 
     &__burger {
         @toggler-part-height  : 1px;
-        @toggler-part-bg-color: @white;
+        @toggler-part-bg-color: @black;
         @transition-time      : 0.5s;
 
         display: none;
@@ -218,6 +220,37 @@
             &:hover {
                 color: @black;
             }
+        }
+
+        &__logo {
+            div {
+                span:last-child {
+                    color: @white;
+                }
+            }
+        }
+
+        &__burger {
+            &>span {
+                background: @white;
+
+                &:before,
+                &:after {
+                    background: @white;
+                }
+            }
+
+            &--close {
+                &>span {
+                    // background: @black;
+
+                    &:before,
+                    &:after {
+                        background: @black;
+                    }
+                }
+            }
+
         }
 
 

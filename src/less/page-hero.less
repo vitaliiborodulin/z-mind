@@ -4,7 +4,7 @@
         padding-bottom: round(174px/@scale);
 
         .md-block( {
-                padding-top   : round(418px/@scale_md);
+                // padding-top   : round(418px/@scale_md);
                 padding-bottom: round(174px/@scale_md);
             }
 
@@ -16,13 +16,15 @@
         background-position: center;
 
         &__content {
-            max-width    : 700px/@scale;
-            margin-left  : auto;
+            max-width      : 700px/@scale;
+            margin-left    : auto;
+            justify-content: space-between;
             // min-height: 852px;
         }
 
         h1 {
-            font-size: round(100px/@scale);
+            font-size  : round(100px/@scale);
+            font-weight: 800;
             .md(font-size, round(100px/@scale_md));
             .sm(font-size, 50px);
         }
