@@ -1,8 +1,14 @@
 .page {
     .hero {
-        padding-top   : 418px/@scale;
-        padding-bottom: 174px/@scale;
+        padding-top   : round(418px/@scale);
+        padding-bottom: round(174px/@scale);
 
+        .md-block( {
+                padding-top   : round(418px/@scale_md);
+                padding-bottom: round(174px/@scale_md);
+            }
+
+        );
         color     : @white;
         background: #487ba0 url(../img/page-hero-bg.jpg) no-repeat center/cover;
 
@@ -13,11 +19,14 @@
         }
 
         h1 {
-            font-size: 100px/@scale;
+            font-size: round(100px/@scale);
+            .md(font-size, round(100px/@scale_md));
+            .sm(font-size, 50px);
         }
 
         &__subheader {
-            font-size  : 48px/@scale;
+            font-size: round(48px/@scale);
+            .md(font-size, round(48px/@scale_md));
             font-weight: 700;
         }
     }

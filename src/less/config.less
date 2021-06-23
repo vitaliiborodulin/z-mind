@@ -4,6 +4,7 @@
 @fontsize  : 20px; // Body Font Size
 @lineheight: 1;
 @scale     : 1.25;
+@scale_md  : 1.6;
 @white     : #ffffff;
 @black     : #000;
 @grey      : #e8e8e8;
@@ -111,9 +112,14 @@ input {
 //   scroll-behavior: smooth;
 // }
 
+.menu-active {
+	overflow: hidden
+}
+
 body {
-	font-family      : @userfont;
-	font-size        : @fontsize;
+	font-family: @userfont;
+	font-size  : @fontsize;
+	.md(font-size, 16px);
 	font-weight      : 400;
 	line-height      : @lineheight;
 	color            : @black;

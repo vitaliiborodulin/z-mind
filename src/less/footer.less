@@ -9,12 +9,38 @@
     &__item {
         .col();
         .size(6);
+        .size-lg(12);
 
-        display    : flex;
-        align-items: center;
+        .lg-block( {
+                text-align : center;
+            }
+
+        );
+
+        &:first-child {
+            p {
+                display     : inline-block;
+                padding-left: 20px;
+                position    : relative;
+
+                span {
+                    position: relative;
+                    content : '';
+                    left    : 0;
+                    top     : -2px;
+                }
+            }
+        }
 
         &:last-child {
             text-align: right;
+
+            .lg-block( {
+                    text-align: center;
+                    margin-top: 5px;
+                }
+
+            );
         }
 
         a {

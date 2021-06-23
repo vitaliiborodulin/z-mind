@@ -1,8 +1,8 @@
 .btn {
-    padding: 27px/@scale 30px/@scale;
+    padding: round(27px/@scale) round(30px/@scale);
     display: inline-block;
 
-    font-size  : 29px/@scale;
+    font-size  : round(29px/@scale);
     font-weight: 700;
 
     text-align     : center;
@@ -14,7 +14,35 @@
     cursor          : pointer;
     transition      : all 0.3s ease;
 
+    .md-block( {
+            padding   : round(27px/@scale_md) round(30px/@scale_md);
+            font-size : round(29px/@scale_md);
+        }
+
+    );
+
     &:hover {
         background-color: darken(@accent, 10%);
+    }
+}
+
+.arrowUpBtn {
+    display      : none;
+    position     : fixed;
+    right        : 10px;
+    bottom       : 10px;
+    width        : 36px;
+    height       : 36px;
+    text-align   : center;
+    border-radius: 50%;
+    box-shadow   : 0 0 5px @white;
+    opacity      : 0.5;
+    cursor       : pointer;
+    z-index      : 95;
+    transition   : opacity 0.2s;
+    background   : @white no-repeat url(../img/up-button.svg) center/contain;
+
+    &:hover {
+        opacity: 1;
     }
 }

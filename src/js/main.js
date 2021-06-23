@@ -1,2 +1,9 @@
-console.log(1);
+(function ($) {
+    $(function () {
+
+        //= components/menu.js
+        //= components/upBtn.js
+
+    });
+})(jQuery);
 
