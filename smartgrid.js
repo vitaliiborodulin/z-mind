@@ -6,13 +6,12 @@ module.exports = {
     fields: '30px' // Внимание! fields обязан быть >= offset / 2
   },
   breakPoints: {
-    // xl: {
-    //   width: '1400px',
-    //   fields: '26px'
-    // },
+    xl: {
+      width: '1200px'
+    },
     lg: {
       width: '992px',
-      fields: '20px'
+      // fields: '20px'
     },
     md: {
       width: '768px'

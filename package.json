@@ -24,5 +24,10 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-uglify-es": "^2.0.0",
 		"smart-grid": "^2.1.2"
+	},
+	"dependencies": {
+		"@fancyapps/fancybox": "^3.5.7",
+		"jquery.maskedinput": "^1.4.1",
+		"slick-carousel": "^1.8.1"
 	}
 }

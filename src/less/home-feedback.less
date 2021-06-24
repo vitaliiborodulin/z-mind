@@ -51,10 +51,10 @@
 
         );
 
-        text-align         : center;
-        border-radius      : 30px;
-        background-color   : @grey;
-        cursor             : pointer;
+        text-align            : center;
+        border-radius         : 30px;
+        background-color      : @grey;
+        // cursor             : pointer;
         // transition      : all 0.3s ease;
 
         // &:hover {
@@ -95,6 +95,7 @@
         .col();
         .size(6);
         .size-md(12);
+        .md(text-align, center);
 
         h2,
         p {
@@ -105,9 +106,8 @@
             font-weight: 700;
 
             .md-block( {
-                    max-width  : round(465px/@scale_md);
-                    margin-left: 0;
-                    font-size  : round(42px/@scale_md);
+                    max-width : round(465px/@scale_md);
+                    font-size : round(42px/@scale_md);
                 }
 
             );
@@ -138,6 +138,7 @@
             box-shadow   : 0px 7px 32px 0px rgba(0, 0, 0, 0.15);
 
             .md-block( {
+                    margin       : 0 auto;
                     margin-bottom: round(25px/@scale_md);
                     padding      : round(28px/@scale_md) round(30px/@scale_md);
                     max-width    : round(640px/@scale_md);

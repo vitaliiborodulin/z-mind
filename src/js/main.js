@@ -1,9 +1,15 @@
-(function ($) {
-    $(function () {
+//= ../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
+//= ../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+//= ../../node_modules/slick-carousel/slick/slick.min.js
 
-        //= components/menu.js
-        //= components/upBtn.js
+$(function () {
 
-    });
-})(jQuery);
+    $('input[type="tel"]').mask("+7 (999) 999-9999");
+
+    //= components/menu.js
+    //= components/slider.js
+    //= components/upBtn.js
+
+});
+
 

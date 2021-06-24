@@ -21,6 +21,7 @@
             font-weight  : 700;
 
             .md-block( {
+                    text-align   : center;
                     margin-bottom: round(25px/@scale_md);
                     font-size    : round(50px/@scale_md);
                 }
@@ -37,7 +38,7 @@
             .col();
             .size(7);
             .size-md(12);
-            // .md(margin-bottom, 10px);
+            .md(text-align, center);
         }
 
         &__descr {
@@ -47,6 +48,7 @@
 
             .md-block( {
                     max-width    : round(751px/@scale_md);
+                    margin       : 0 auto;
                     margin-bottom: round(45px/@scale_md);
                 }
 
