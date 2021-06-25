@@ -1,0 +1,122 @@
+.course {
+    padding-top     : round(57px/@scale);
+    padding-bottom  : round(86px/@scale);
+    background-color: #f3f3f3;
+
+    .md-block( {
+            padding-top    : round(57px/@scale_md);
+            padding-bottom : round(86px/@scale_md);
+        }
+
+    );
+
+    &__title {
+        margin-bottom: round(53px/@scale);
+        .md(margin-bottom, round(53px/@scale_md));
+    }
+
+    .slick-list {
+        padding: 10px;
+    }
+
+    .slick-arrow {
+        position : absolute;
+        top      : 47%;
+        z-index  : 2;
+        font-size: 0;
+        width    : round(43px/@scale);
+        height   : round(43px/@scale);
+        outline  : none;
+        border   : none;
+        cursor   : pointer;
+
+        &.slick-prev {
+            left      : -25px;
+            background: url('../img/team-prev.png') no-repeat;
+            .md(left, -10px);
+        }
+
+        &.slick-next {
+            background: url('../img/team-next.png') no-repeat;
+            right     : -25px;
+            .md(right, -10px);
+        }
+    }
+
+    &__item {
+        margin    : 0 20px;
+        min-height: round(628px/@scale);
+        padding   : round(38px/@scale) round(44px/@scale) round(42px/@scale);
+
+        .md-block( {
+                // max-width  : 80%;
+                // margin     : 0 40px;
+                min-height : round(628px/@scale_md);
+                padding    : round(38px/@scale_md) round(44px/@scale_md) round(42px/@scale_md);
+            }
+
+        );
+
+        text-align            : center;
+        border-radius         : 30px;
+        background-color      : #fdfdfd;
+        box-shadow            : 0px 7px 7px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow         : 0px 9px 49px 13px rgba(65, 63, 63, 0.1);
+
+
+        h3 {
+            margin-bottom   : round(42px/@scale);
+            // font-size    : round(46px/@scale);
+            font-size       : 26px;
+
+            .md-block( {
+                    margin-bottom : round(42px/@scale_md);
+                    font-size     : 20px;
+                }
+
+            );
+        }
+    }
+
+    &__image {
+        margin       : 0 auto;
+        margin-bottom: round(33px/@scale);
+
+        width : round(273px/@scale);
+        height: round(273px/@scale);
+
+        .md-block( {
+                margin-bottom: round(33px/@scale_md);
+                width        : round(273px/@scale_md);
+                height       : round(273px/@scale_md);
+            }
+
+        );
+
+        background-color: @white;
+        box-shadow      : 0px 9px 125px 0px rgba(0, 0, 0, 0.15);
+        border-radius   : 50%;
+
+        img {
+            width     : 100%;
+            height    : 100%;
+            object-fit: contain;
+        }
+
+    }
+
+    &__descr {
+        margin-bottom: round(53px/@scale);
+        .md(margin-bottom, round(53px/@scale_md));
+    }
+
+    &__btn {
+        width           : round(311px/@scale);
+        max-width       : 100%;
+        background-color: @red;
+
+        &:hover {
+            background-color: darken(@red, 10%);
+        }
+    }
+}

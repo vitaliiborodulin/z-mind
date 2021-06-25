@@ -1,12 +1,14 @@
 .team {
-    padding-top      : round(82px/@scale);
-    padding-bottom   : round(165px/@scale);
+    padding-top         : round(82px/@scale);
+    // padding-bottom   : round(165px/@scale); 
+    padding-bottom      : 70px;
     // min-height    : 762px;
-    background       : url(../img/team-bg.png) no-repeat center/contain;
+    background          : url(../img/team-bg.png) no-repeat center/contain;
 
     .md-block( {
-            padding-top    : round(82px/@scale_md);
-            padding-bottom : round(165px/@scale_md);
+            padding-top       : round(82px/@scale_md);
+            // padding-bottom : round(165px/@scale_md);
+            padding-bottom    : 55px;
         }
 
     );
@@ -14,6 +16,13 @@
     &__title {
         margin-bottom: round(88px/@scale);
         .md(margin-bottom, round(88px/@scale_md));
+    }
+
+    .slick-center {
+        .team__image {
+            transform: scale(1.2);
+            .md(transform, none);
+        }
     }
 
     .slick-arrow {
@@ -46,9 +55,9 @@
     }
 
     &__slide {
-        // outline       : none;
+        outline          : none;
         // padding       : 20px 35px;
-        padding-top: 20px;
+        padding-top      : 20px;
 
         h3 {
             margin-bottom: round(14px/@scale);
