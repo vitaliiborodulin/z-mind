@@ -8,6 +8,7 @@ $(function () {
 
     //= components/menu.js
     //= components/slider.js
+    //= components/popup.js
     //= components/upBtn.js
 
 });

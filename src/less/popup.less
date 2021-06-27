@@ -1,5 +1,74 @@
 .popup {
+    width        : 90%;
     max-width    : 700px;
-    padding      : 30px;
+    padding      : 20px 30px;
     border-radius: 30px;
+
+    &__title {
+        font-size  : round(50px/@scale);
+        font-weight: 700;
+        text-align : center;
+
+        .md-block( {
+                font-size : round(50px/@scale_md);
+            }
+
+        );
+    }
+
+    &__subtitle {
+        margin-bottom: round(27px/@scale);
+        font-size    : round(33px/@scale);
+        text-align   : center;
+
+        .md-block( {
+                margin-bottom : round(27px/@scale_md);
+                font-size     : round(33px/@scale_md);
+            }
+
+        );
+    }
+
+    &__form {
+
+        input,
+        textarea {
+            margin       : 0 auto;
+            margin-bottom: round(25px/@scale);
+            padding      : round(27px/@scale) round(30px/@scale);
+
+            width    : 100%;
+            max-width: round(640px/@scale);
+            display  : block;
+
+            border       : 1px solid transparent;
+            border-radius: 50px;
+            box-shadow   : 0px 7px 32px 0px rgba(0, 0, 0, 0.15);
+
+            .md-block( {
+                    margin       : 0 auto;
+                    margin-bottom: round(25px/@scale_md);
+                    padding      : round(28px/@scale_md) round(30px/@scale_md);
+                    max-width    : round(640px/@scale_md);
+                }
+
+            );
+        }
+
+        textarea {
+            border-radius: 30px;
+            outline      : none;
+            min-height   : 250px;
+            resize       : none;
+        }
+    }
+
+    // .fancybox-close-small {}
+}
+
+#review-popup {
+    .popup__title {
+        margin-bottom: round(27px/@scale);
+        .md(margin-bottom, round(27px/@scale_md));
+    }
 }

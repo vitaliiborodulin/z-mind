@@ -1,6 +1,6 @@
 .about {
     padding-top   : round(122px/@scale);
-    padding-bottom: 40px;
+    padding-bottom: round(85px/@scale);
 
     .md-block( {
             padding-top   : round(122px/@scale_md);
@@ -36,6 +36,10 @@
             }
 
         );
+
+        &:last-child {
+            .md(margin-bottom, 0);
+        }
 
         cursor    : pointer;
         transition: all 0.3s ease;

@@ -1,9 +1,24 @@
-<div style="display: none;" id="popup" class="popup">
-    <form action="#">
-        <h3 class="popup__title">Форма</h3>
-        <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Текстами сих маленький
-            города использовало взобравшись строчка, лучше решила грамматики языкового рукописи то толку! Которой даль
-            домах назад заголовок большого семантика своего послушавшись себя океана букв? Дорогу безорфографичный
-            встретил алфавит дал коварных своего маленький вершину знаках, лучше букв рекламных? Пояс.</p>
-    </form>
+<div style="display: none;" id="lead-popup" class="popup">
+    <h3 class="popup__title">Записаться</h3>
+    <p class="popup__subtitle"></p>
+    <div class="popup__form">
+        <form action="#">
+            <input type="text" name="your-name" placeholder="Имя" required>
+            <input type="tel" name="your-phone" placeholder="Телефон" required>
+            <input type="email" name="your-mail" placeholder="Почта" required>
+            <input type="submit" class="btn feedback__btn" value="Оставить запрос">
+            <input type="hidden" name="your-type">
+        </form>
+    </div>
+</div>
+
+<div style="display: none;" id="review-popup" class="popup">
+    <h3 class="popup__title">Оставьте отзыв</h3>
+    <div class="popup__form">
+        <form action="#">
+            <input type="text" name="your-name" placeholder="Имя" required>
+            <textarea name="your-text" placeholder="Отзыв" required></textarea>
+            <input type="submit" class="btn feedback__btn" value="Отправить">
+        </form>
+    </div>
 </div>
