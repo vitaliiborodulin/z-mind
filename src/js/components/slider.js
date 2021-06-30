@@ -34,7 +34,7 @@ $('.team__slider').slick({
     autoplaySpeed: 2000,
     responsive: [
         {
-            breakpoint: 992,
+            breakpoint: 1200,
             settings: {
                 slidesToShow: 2
             }
@@ -58,4 +58,5 @@ $('.review__slider').slick({
     centerPadding: '20px',
     autoplay: true,
     autoplaySpeed: 3000,
+    adaptiveHeight: true
 });

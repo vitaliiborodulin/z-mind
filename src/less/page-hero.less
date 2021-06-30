@@ -1,4 +1,4 @@
-.page {
+.single-courses {
     .hero {
         padding-top   : round(418px/@scale);
         padding-bottom: round(174px/@scale);
@@ -16,7 +16,8 @@
         background-position: center;
 
         &__content {
-            max-width      : 700px/@scale;
+            // max-width      : 700px/@scale;
+            text-align     : right;
             margin-left    : auto;
             justify-content: space-between;
             // min-height: 852px;
@@ -27,6 +28,14 @@
             font-weight: 800;
             .md(font-size, round(100px/@scale_md));
             .sm(font-size, 50px);
+
+            // word-wrap : break-word;
+            // word-break: break-all;
+            // hyphens   : auto;
+
+            br {
+                .sm(display, none);
+            }
         }
 
         &__subheader {

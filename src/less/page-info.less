@@ -1,4 +1,4 @@
-.page {
+.single-courses {
     .info {
         padding-top   : 64px/@scale;
         padding-bottom: 59px/@scale;
@@ -51,6 +51,7 @@
                 }
 
             );
+
             border-radius: 30px;
             background   : @white;
             .block-shadow();
@@ -66,6 +67,22 @@
 
                 );
             }
+
+            li {
+                position    : relative;
+                padding-left: 15px;
+
+                &::before {
+                    position        : absolute;
+                    display         : block;
+                    content         : '';
+                    width           : 6px;
+                    height          : 2px;
+                    background-color: @black;
+                    left            : 0;
+                    top             : 10px;
+                }
+            }
         }
 
         &__text {
@@ -73,24 +90,12 @@
                 margin-bottom: round(25px/@scale);
             }
 
-            p+ul {
-                margin-top: round(-25px/@scale);
+            strong {
+                font-weight: 700;
             }
 
-            li {
-                // position    : relative;
-                // padding-left: 15px;
-
-                // &::before {
-                //     position        : absolute;
-                //     display         : block;
-                //     content         : '';
-                //     width           : 6px;
-                //     height          : 2px;
-                //     background-color: @black;
-                //     left            : 0;
-                //     top             : 12px;
-                // }
+            p+ul {
+                margin-top: round(-25px/@scale);
             }
         }
 

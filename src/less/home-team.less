@@ -21,7 +21,7 @@
     .slick-center {
         .team__image {
             transform: scale(1.2);
-            .md(transform, none);
+            .xl(transform, none);
         }
     }
 
@@ -57,7 +57,15 @@
     &__slide {
         outline          : none;
         // padding       : 20px 35px;
+        padding          : 0 35px;
         padding-top      : 20px;
+
+        .md-block( {
+                padding-left : 20px;
+                padding-right: 20px;
+            }
+
+        );
 
         h3 {
             margin-bottom: round(14px/@scale);
@@ -71,6 +79,17 @@
 
             )
         }
+    }
+
+    &__descr {
+        padding: 0 10px;
+
+        .md-block( {
+                max-width: 400px;
+                margin   : 0 auto;
+            }
+
+        );
     }
 
     &__image {

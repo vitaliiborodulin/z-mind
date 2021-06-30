@@ -17,6 +17,11 @@
 
     .slick-list {
         padding: 10px;
+        display: flex;
+
+        .slick-track {
+            display: flex;
+        }
     }
 
     .slick-arrow {
@@ -44,18 +49,7 @@
     }
 
     &__item {
-        margin    : 0 20px;
-        min-height: round(628px/@scale);
-        padding   : round(38px/@scale) round(44px/@scale) round(42px/@scale);
-
-        .md-block( {
-                // max-width  : 80%;
-                // margin     : 0 40px;
-                min-height : round(628px/@scale_md);
-                padding    : round(38px/@scale_md) round(44px/@scale_md) round(42px/@scale_md);
-            }
-
-        );
+        margin: 0 20px;
 
         text-align            : center;
         border-radius         : 30px;
@@ -65,17 +59,43 @@
 
 
         h3 {
-            margin-bottom   : round(42px/@scale);
+            // margin-bottom   : round(42px/@scale);
             // font-size    : round(46px/@scale);
-            font-size       : 26px;
+            margin-bottom: 10px;
+            font-size    : 26px;
+
+            // min-height        : 51px;
+            // display           : -webkit-box;
+            // -webkit-line-clamp: 2;
+            // -webkit-box-orient: vertical;
+            // overflow          : hidden;
 
             .md-block( {
-                    margin-bottom : round(42px/@scale_md);
-                    font-size     : 20px;
+                    // margin-bottom : round(42px/@scale_md);
+                    font-size : 20px;
                 }
 
             );
         }
+    }
+
+    &__wrapper {
+        display         : flex;
+        flex-direction  : column;
+        align-items     : center;
+        // min-height: round(628px/@scale);
+        // min-height   : 625px;
+        height          : 100%;
+        padding         : round(38px/@scale) round(44px/@scale) round(42px/@scale);
+
+        .md-block( {
+                // max-width  : 80%;
+                // margin     : 0 40px;
+                min-height : round(628px/@scale_md);
+                padding    : round(38px/@scale_md) round(44px/@scale_md) round(42px/@scale_md);
+            }
+
+        );
     }
 
     &__image {
@@ -106,11 +126,13 @@
     }
 
     &__descr {
-        margin-bottom: round(53px/@scale);
-        .md(margin-bottom, round(53px/@scale_md));
+        margin-bottom   : 10px;
+        // margin-bottom: round(53px/@scale);
+        // .md(margin-bottom, round(53px/@scale_md));
     }
 
     &__btn {
+        margin-top      : auto;
         width           : round(311px/@scale);
         max-width       : 100%;
         background-color: @red;
