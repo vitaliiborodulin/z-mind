@@ -5,9 +5,7 @@
 		"build": "gulp build"
 	},
 	"browserslist": [
-		"last 2 versions",
-		"not dead",
-		">0.2%"
+		"defaults"
 	],
 	"devDependencies": {
 		"browser-sync": "^2.26.14",

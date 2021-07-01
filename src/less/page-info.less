@@ -68,19 +68,24 @@
                 );
             }
 
-            li {
-                position    : relative;
-                padding-left: 15px;
+            ul {
+                li {
+                    position     : relative;
+                    padding-left : 15px;
+                    margin-bottom: 4px;
 
-                &::before {
-                    position        : absolute;
-                    display         : block;
-                    content         : '';
-                    width           : 6px;
-                    height          : 2px;
-                    background-color: @black;
-                    left            : 0;
-                    top             : 10px;
+                    &::before {
+                        position           : absolute;
+                        content            : '';
+                        left               : 0;
+                        top                : 4px;
+                        // width           : round(27px/@scale);
+                        // height          : round(27px/@scale);
+                        width              : 10px;
+                        height             : 10px;
+                        background-color   : @accent;
+                        border-radius      : 50%;
+                    }
                 }
             }
         }

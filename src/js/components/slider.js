@@ -58,5 +58,5 @@ $('.review__slider').slick({
     centerPadding: '20px',
     autoplay: true,
     autoplaySpeed: 3000,
-    adaptiveHeight: true
+    // adaptiveHeight: true
 });

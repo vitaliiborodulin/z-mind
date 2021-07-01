@@ -82,18 +82,20 @@
         li {
             position     : relative;
             margin-bottom: round(43px/@scale);
-            padding-left : 20px;
+            padding-left : 25px;
             .md(margin-bottom, round(43px/@scale_md));
 
             &::before {
-                position        : absolute;
-                content         : '';
-                left            : -8px;
-                top             : 0;
-                width           : round(27px/@scale);
-                height          : round(27px/@scale);
-                background-color: @accent;
-                border-radius   : 50%;
+                position           : absolute;
+                content            : '';
+                left               : 0;
+                top                : 0;
+                // width           : round(27px/@scale);
+                // height          : round(27px/@scale);
+                width              : 15px;
+                height             : 15px;
+                background-color   : @accent;
+                border-radius      : 50%;
             }
         }
     }
