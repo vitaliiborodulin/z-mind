@@ -1,8 +1,14 @@
 .benefit {
+    background    : url(../img/home-benefit-bg-1.png) no-repeat left top,
+            url(../img/home-benefit-bg-2.png) no-repeat right bottom;
+    
+    .md(background, none);
+
     &__content {
         border-radius         : 100px;
         // border             : 1px solid #000;
         background-color      : @white;
+        
         box-shadow            : 0px 25px 73px 0px rgba(0, 0, 0, 0.1);
         padding               : round(103px/@scale) round(55px/@scale) round(43px/@scale);
 

@@ -3,11 +3,16 @@
         // padding-top      : round(180px/@scale);
         padding-top      : 190px;
         padding-bottom   : round(76px/@scale);
-        // background    : url(../img/home-hero-bg-1.png) no-repeat left top,
-        //     url(../img/home-hero-bg-2.png) no-repeat right bottom;
+        background    : url(../img/home-hero-bg-1.png) no-repeat left top,
+            url(../img/home-hero-bg-2.png) no-repeat right bottom;
+
+        .xl-block({
+            background    : url(../img/home-hero-bg-1.png) no-repeat left top
+        });
 
         .md-block( {
                 // padding-top   : 140px;
+                background: none;
                 padding-bottom: round(76px/@scale_md);
             }
 
@@ -39,7 +44,7 @@
 
         &__text {
             .col();
-            .size(7);
+            .size(6);
             .size-md(12);
             .md(text-align, center);
         }
@@ -60,7 +65,7 @@
 
         &__image {
             .col();
-            .size(5);
+            .size(6);
             .md(display, none);
             // .size-md(12);
 

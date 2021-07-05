@@ -5,11 +5,17 @@
         top     : 0;
         left    : 0;
         width   : 100%;
+        z-index: 10;
     }
 }
 
 .header {
-    // background: url(../img/home-header-bg.png) no-repeat right top/contain;
+    background-image: url(../img/home-header-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: -58px;
+    background-size: 64%;
+    .xl(background, none);
 
     &__top {
         padding           : 10px 0;

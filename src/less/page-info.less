@@ -5,13 +5,15 @@
         background    : url(../img/page-bluelines-left.png) no-repeat left 320px,
             url(../img/page-bluelines-right.png) no-repeat right bottom;
 
-        .md-block( {
+        .xl-block({
+            background    : url(../img/page-bluelines-left.png) no-repeat left 320px;
+        });
+
+        .md-block({
                 padding-top   : round(64px/@scale_md);
                 padding-bottom: round(59px/@scale_md);
-                background    : url(../img/page-bluelines-left.png) no-repeat left 320px;
-            }
-
-        );
+                background: none;
+        });
 
         &__content {
             // background: url(../img/page-greylines.png) no-repeat center bottom;
