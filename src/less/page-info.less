@@ -1,3 +1,112 @@
+.single {
+    .info {
+        padding-top   : 64px/@scale;
+        padding-bottom: 59px/@scale;
+        .md-block({
+            padding-top   : 0;
+            padding-bottom: round(59px/@scale_md);
+        });
+
+        &__wrapper {
+            .row-flex();
+        }
+    
+        &__blocks {
+            .col();
+            .size(8);
+            .size-lg(12);
+        }
+    
+        &__sidebar {
+            .col();
+            .size(4);
+            .size-lg(12);
+            .md(margin-top, 10px);
+        }
+
+        &__block {
+            margin-bottom : round(57px/@scale);
+            padding-top   : round(50px/@scale);
+            padding-left  : round(76px/@scale);
+            padding-right : round(68px/@scale);
+            padding-bottom: round(55px/@scale);
+
+            border-radius: 30px;
+            background   : @white;
+            .block-shadow();
+            
+            .md-block( {
+                margin-bottom : round(57px/@scale_md);
+                // padding-top   : round(50px/@scale_md);
+                // padding-left  : round(76px/@scale_md);
+                // padding-right : round(68px/@scale_md);
+                // padding-bottom: round(55px/@scale_md);
+                padding: 30px 20px 25px;
+            });
+
+            h1 {
+                margin-bottom: round(27px/@scale);
+                font-size    : round(46px/@scale);
+                font-weight: 700;
+
+                .md-block( {
+                        margin-bottom: round(27px/@scale_md);
+                        font-size    : round(46px/@scale_md);
+                    }
+
+                );
+            }
+
+            
+            ul {
+                li {
+                    position     : relative;
+                    padding-left : 15px;
+                    margin-bottom: 4px;
+
+                    &::before {
+                        position           : absolute;
+                        content            : '';
+                        left               : 0;
+                        top                : 4px;
+                        // width           : round(27px/@scale);
+                        // height          : round(27px/@scale);
+                        width              : 10px;
+                        height             : 10px;
+                        background-color   : @accent;
+                        border-radius      : 50%;
+                    }
+                }
+            }
+
+            p, ul {
+                margin-bottom: round(25px/@scale);
+            }
+
+            strong {
+                font-weight: 700;
+            }
+
+        }
+
+        &__image {
+            text-align: center;
+
+            img {
+                max-width: 320px;
+            }
+        }
+
+        .info__btns {
+            .lg(text-align, center);
+            a {
+                margin       : 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
 .single-courses {
     .info {
         padding-top   : 64px/@scale;

@@ -1,4 +1,4 @@
-$('.course__list').slick({
+$('#course .course__list').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
