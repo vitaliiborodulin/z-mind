@@ -1,16 +1,26 @@
-//= ../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
-//= ../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js
-//= ../../node_modules/slick-carousel/slick/slick.min.js
+$(function() {
 
-$(function () {
+    $.fn.visible = function(partial) {
+
+        var $t = $(this),
+            $w = $(window),
+            viewTop = $w.scrollTop(),
+            viewBottom = viewTop + $w.height(),
+            _top = $t.offset().top,
+            _bottom = _top + $t.height(),
+            compareTop = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+    };
 
     $('input[type="tel"]').mask("+7 (999) 999-9999");
 
+
+    //= components/animate.js
     //= components/menu.js
-    //= components/slider.js
     //= components/popup.js
-    //= components/upBtn.js
+    //= components/slider.js
 
-});
-
-
+})

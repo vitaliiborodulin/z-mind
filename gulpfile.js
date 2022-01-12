@@ -65,6 +65,16 @@ const cssProd = () => {
 
 exports.cssProd = cssProd;
 
+const copyCss = () => {
+    return gulp.src("src/css/*.css")
+        .pipe(gulp.dest(dist + "css"))
+        .pipe(sync.stream({
+            once: true
+        }));
+}
+
+exports.copyCss = copyCss;
+
 // Smartgrid
 const grid = (done) => {
     delete require.cache[require.resolve('./smartgrid.js')];
@@ -83,7 +93,7 @@ const jsDev = () => {
         })
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(concat('script.js'))
+        // .pipe(concat('script.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(dist + "js"))
         .pipe(sync.stream())
@@ -96,7 +106,7 @@ const jsProd = () => {
             base: './src/js/'
         })
         .pipe(rigger())
-        .pipe(concat('script.js'))
+        // .pipe(concat('script.js'))
         // .pipe(uglify({
         // 	toplevel: true
         // }))
@@ -182,6 +192,7 @@ const watch = () => {
     gulp.watch("./src/*.html", gulp.series(htmlDev));
     gulp.watch("./src/html/**/*.html", gulp.series(htmlDev));
     gulp.watch("./src/less/**/*.less", gulp.series(cssDev));
+    gulp.watch("./src/css/*.css", gulp.series(copyCss));
     gulp.watch("./src/js/**/*.js", gulp.series(jsDev));
     gulp.watch("./src/img/**/*", gulp.series(imagesDev));
     gulp.watch("./src/files/*.*", gulp.series(copy));
@@ -200,6 +211,7 @@ exports.dev = gulp.series(
     gulp.parallel(
         htmlDev,
         cssDev,
+        copyCss,
         jsDev,
         imagesDev,
         copy
@@ -216,6 +228,7 @@ exports.build = gulp.series(
     gulp.parallel(
         htmlProd,
         cssProd,
+        copyCss,
         jsProd,
         imagesProd,
         copy
